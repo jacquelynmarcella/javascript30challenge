@@ -1,13 +1,15 @@
 :root {
   --base: #FFC600;
   --spacing: 10px;
-  --blur: 10px;
+  --blur: 0px;
 }
 
 img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
+  box-sizing: border-box;
+  max-width: 800px;
 }
 
 .hl {
