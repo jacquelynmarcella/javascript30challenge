@@ -7,7 +7,7 @@ function playSound(e) {
 		audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 	} else if(e.type === "click") {
 		key = this;
-		audio = document.querySelector(`audio[data-key="${this.attributes[0].nodeValue}"]`);
+		audio = document.querySelector(`audio[data-key="${this.dataset.key}"]`);
 	}
 	
 	if(!audio) return; // stop function from running alltogether
