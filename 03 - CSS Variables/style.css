@@ -10,6 +10,7 @@ img {
   filter: blur(var(--blur));
   box-sizing: border-box;
   max-width: 800px;
+  transition: all .25s;
 }
 
 .hl {
